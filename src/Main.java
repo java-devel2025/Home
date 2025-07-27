@@ -2,73 +2,113 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
+        int intt;
+        byte bytee;
+        short shortt;
+        long longg;
+        float floatt;
+        double doublee;
 
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
 
         // Задача 2
-        dog = dog + 4;
-        System.out.println(dog);
+        intt = 67;
+        bytee = 67;
+        shortt = 27897;
+        longg = 987678965549L;
+        floatt = 27.12f;
+        doublee = 2.786;
 
-        cat = cat + 4;
-        System.out.println(cat);
-
-        paper = paper + 4;
-        System.out.println(paper);
 
         // Задача 3
-        dog = dog - 3.5;
-        System.out.println(dog);
+        byte class1 = 23;
+        byte class2 = 27;
+        byte class3 = 30;
+        short total = 480;
+        System.out.println("На каждого ученика рассчитано " + total / (class1 + class2 + class3) + " листов бумаги");
 
-        cat = cat - 1.6;
-        System.out.println(cat);
-
-        paper = paper - 7639;
-        System.out.println(paper);
 
         // Задача 4
-        var friend = 19;
-        System.out.println(friend);
+        byte crate = 8;
+        byte minutes20 = 20;
+        byte day = 1;
+        byte day3 = 3;
+        byte month = 1;
+        System.out.println("За " + minutes20 + " минут машина произвела " + minutes20 * crate + " штук бутылок");
+        System.out.println("За " + day + " день машина произвела " + day * 1440 * crate + " штук бутылок");
+        System.out.println("За " + day3 + " дня машина произвела " + day3 * 1440  * crate + " штук бутылок");
+        System.out.println("За " + month + " месяц машина произвела " + day * 1440 * 30 * crate + " штук бутылок");
 
-        friend = friend + 2;
-        System.out.println(friend);
-
-        friend = friend / 7;
-        System.out.println(friend);
 
         // Задача 5
-        var frog = 3.5;
-        System.out.println(frog);
+        byte needWhite = 2;
+        byte needBrown = 4;
+        byte all = 120;
 
-        frog = frog * 10;
-        System.out.println(frog);
+        System.out.println("В школе, где " + all / (needWhite + needBrown) + " классов, " +
+                "нужно " + needWhite * (all / (needWhite + needBrown)) + " банок белой краски и "
+                + needBrown * (all / (needWhite + needBrown)) +  " банок коричневой краски");
 
-        frog = frog / 3.5;
-        System.out.println(frog);
-
-        frog = frog + 4;
-        System.out.println(frog);
 
         // Задача 6
-        var boxer1 = 78.2;
-        var boxer2 = 82.7;
-        System.out.println(boxer1 + boxer2);
-        System.out.println(boxer2 - boxer1);
+
+        // переменные количество
+        byte pieceBanan;
+        short pieceMilk;
+        byte pieceIceCream;
+        byte pieceAgs;
+
+        // переменные вес
+        byte weightBanan;
+        float weightMilk;
+        byte weightIceCream;
+        byte weightEgg;
+        short kg;
+
+        // условие
+        pieceBanan = 5;
+        pieceMilk = 200;
+        pieceIceCream = 2;
+        pieceAgs = 4;
+
+        // вес каждой части - постоянная
+        weightBanan = 80;
+        weightMilk = 1.05f;
+        weightIceCream = 100;
+        weightEgg = 70;
+        kg = 1000;
+
+        var totalBanan = pieceBanan * weightBanan;
+        var totalMilk = pieceMilk * weightMilk;
+        var totalIceCream = pieceIceCream * weightIceCream;
+        var totalAgs = pieceAgs * weightEgg;
+        var totalAllG = totalBanan + totalMilk + totalIceCream + totalAgs;
+        var totalAllKg = totalAllG / kg;
+
+        System.out.println("Вес завтрака составит " + totalAllG + " грамм, или " + totalAllKg + " килограмма");
+
 
         // Задача 7
-        System.out.println(boxer2 % boxer1);
+        byte wait = 7;
+        float drop250 = 0.25f;
+        float drop500 = 0.5f;
+
+        System.out.println("Если терять по 250 г. в день то потребуется " + wait / drop250 + " дней, а если терять по 500 г., " +
+                "то потребуется " + wait / drop500 + " дней.");
+
 
         // Задача 8
-        var allHour = 640;
-        var hour = 8;
-        var peoples = allHour / hour;
-        var newPeoples = 94;
-        System.out.println("Всего работников в компании — " + peoples + " человек");
-        System.out.println("Если в компании работает " + peoples + " человек, то всего " + allHour / newPeoples +
-                " часов работы может быть поделено между сотрудниками");
+        int masha = 67760;
+        int denis = 83690;
+        int kristi = 76230;
+        float bonus = 0.1f;
+
+        System.out.println("Маша теперь получает " + (masha + (masha * bonus)) +
+                " рублей. Годовой доход вырос на " + masha * bonus + " рублей");
+
+        System.out.println("Денис теперь получает " + (denis + (denis * bonus)) +
+                " рублей. Годовой доход вырос на " + denis * bonus + " рублей");
+
+        System.out.println("Кристина теперь получает " + (kristi + (kristi * bonus)) +
+                " рублей. Годовой доход вырос на " + kristi * bonus + " рублей");
     }
 }
