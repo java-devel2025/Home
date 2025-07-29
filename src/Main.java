@@ -2,113 +2,105 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        int intt;
-        byte bytee;
-        short shortt;
-        long longg;
-        float floatt;
-        double doublee;
+        byte age = 17;
+
+        if (age >= 18){
+            System.out.println("Тебе 18 или больше лет");
+        } else {
+            // Блок выполнится. Результат выражения в условии if был false
+            System.out.println("Ты еще салага, подрасти ))");
+        }
 
 
         // Задача 2
-        intt = 67;
-        bytee = 67;
-        shortt = 27897;
-        longg = 987678965549L;
-        floatt = 27.12f;
-        doublee = 2.786;
+        byte realTemperature = 17;
 
+        if (realTemperature < 5){
+            System.out.println("На улице холодно, нужно надеть шапку");
+        } else {
+            // Блок выполнится. Результат выражения в условии if был false
+            System.out.println("Сегодня тепло, можно идти без шапки");
+        }
 
         // Задача 3
-        byte class1 = 23;
-        byte class2 = 27;
-        byte class3 = 30;
-        short total = 480;
-        System.out.println("На каждого ученика рассчитано " + total / (class1 + class2 + class3) + " листов бумаги");
+        byte overSpeed = 17;
 
+        if (overSpeed > 60){
+            System.out.println("Скорость превышена");
+        } else {
+            // Блок выполнится. Результат выражения в условии if был false
+            System.out.println("Превышения скорости нет");
+        }
 
         // Задача 4
-        byte crate = 8;
-        byte minutes20 = 20;
-        byte day = 1;
-        byte day3 = 3;
-        byte month = 1;
-        System.out.println("За " + minutes20 + " минут машина произвела " + minutes20 * crate + " штук бутылок");
-        System.out.println("За " + day + " день машина произвела " + day * 1440 * crate + " штук бутылок");
-        System.out.println("За " + day3 + " дня машина произвела " + day3 * 1440  * crate + " штук бутылок");
-        System.out.println("За " + month + " месяц машина произвела " + day * 1440 * 30 * crate + " штук бутылок");
+        byte realAge = 55;
 
+        if (realAge <= 6 && realAge >= 2){
+            System.out.println("Тебе нужно ходить в детский сад");
+        }
+        if (realAge <= 17 && realAge >= 7){
+            System.out.println("Тебе нужно ходить в школу");
+        }
+        if (realAge <= 24 && realAge >= 18){
+            System.out.println("Тебе нужно ходить в университет");
+        }
+        if (realAge > 24) {
+            // Блок выполнится. Результат выражения в условии if был false
+            System.out.println("Ты оборзел иди работать, трутень или начни учится в Skypro!");
+        }
 
         // Задача 5
-        byte needWhite = 2;
-        byte needBrown = 4;
-        byte all = 120;
+        byte child = 14;
+        boolean adult = false;
 
-        System.out.println("В школе, где " + all / (needWhite + needBrown) + " классов, " +
-                "нужно " + needWhite * (all / (needWhite + needBrown)) + " банок белой краски и "
-                + needBrown * (all / (needWhite + needBrown)) +  " банок коричневой краски");
+        if (child < 5) {
+            System.out.println("Тебе рано на аттракцион");
+        }
+        if (child < 14 && realAge >= 5 && !adult){
+            System.out.println("Если взрослого рядом нет, то кататься нельзя");
+        }
+        if (child >= 14 && !adult){
+            System.out.println("Ты можешь кататься без сопровождения взрослого");
+        }
 
 
         // Задача 6
+        byte trainCarriageAll = 102;
+        byte trainCarriageSeating = 60;
+        byte trainCarriageAvailableAll = 59;
 
-        // переменные количество
-        byte pieceBanan;
-        short pieceMilk;
-        byte pieceIceCream;
-        byte pieceAgs;
-
-        // переменные вес
-        byte weightBanan;
-        float weightMilk;
-        byte weightIceCream;
-        byte weightEgg;
-        short kg;
-
-        // условие
-        pieceBanan = 5;
-        pieceMilk = 200;
-        pieceIceCream = 2;
-        pieceAgs = 4;
-
-        // вес каждой части - постоянная
-        weightBanan = 80;
-        weightMilk = 1.05f;
-        weightIceCream = 100;
-        weightEgg = 70;
-        kg = 1000;
-
-        var totalBanan = pieceBanan * weightBanan;
-        var totalMilk = pieceMilk * weightMilk;
-        var totalIceCream = pieceIceCream * weightIceCream;
-        var totalAgs = pieceAgs * weightEgg;
-        var totalAllG = totalBanan + totalMilk + totalIceCream + totalAgs;
-        var totalAllKg = totalAllG / kg;
-
-        System.out.println("Вес завтрака составит " + totalAllG + " грамм, или " + totalAllKg + " килограмма");
-
+        if (trainCarriageAvailableAll < trainCarriageAll){
+            System.out.println("Есть место в вагоне");
+        } else {
+            System.out.println("Вагон уже полностью забит");
+        }
+        if (trainCarriageAvailableAll < trainCarriageSeating){
+            System.out.println("Есть сидячее место в вагоне");
+        }
+        if (trainCarriageAvailableAll > trainCarriageSeating && trainCarriageAvailableAll < trainCarriageAll) {
+            System.out.println("В вагоне остались только стоячие места");
+        }
 
         // Задача 7
-        byte wait = 7;
-        float drop250 = 0.25f;
-        float drop500 = 0.5f;
+        int one;
+        int two;
+        int three;
 
-        System.out.println("Если терять по 250 г. в день то потребуется " + wait / drop250 + " дней, а если терять по 500 г., " +
-                "то потребуется " + wait / drop500 + " дней.");
+        one = 1;
+        two = 2;
+        three = 3;
 
+        int truee = 0;
 
-        // Задача 8
-        int masha = 67760;
-        int denis = 83690;
-        int kristi = 76230;
-        float bonus = 0.1f;
-
-        System.out.println("Маша теперь получает " + (masha + (masha * bonus)) +
-                " рублей. Годовой доход вырос на " + masha * bonus + " рублей");
-
-        System.out.println("Денис теперь получает " + (denis + (denis * bonus)) +
-                " рублей. Годовой доход вырос на " + denis * bonus + " рублей");
-
-        System.out.println("Кристина теперь получает " + (kristi + (kristi * bonus)) +
-                " рублей. Годовой доход вырос на " + kristi * bonus + " рублей");
+        if (one > two) {
+            System.out.println(truee = one);
+        } else {
+            System.out.println(truee = two);
+        }
+        if (truee > three) {
+            System.out.println(truee = three);
+        } else {
+            System.out.println(truee = three);
+        }
     }
 }
