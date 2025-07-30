@@ -8,7 +8,7 @@ public class Main {
             System.out.println("Тебе 18 или больше лет");
         } else {
             // Блок выполнится. Результат выражения в условии if был false
-            System.out.println("Ты еще салага, подрасти ))");
+            System.out.println("Возраст совершеннолетия еще не наступил, нужно немного подождать.");
         }
 
 
@@ -36,17 +36,16 @@ public class Main {
         byte realAge = 55;
 
         if (realAge <= 6 && realAge >= 2){
-            System.out.println("Тебе нужно ходить в детский сад");
+            System.out.println("Если возраст человека равен " + realAge + " тебе нужно ходить в детский сад");
         }
         if (realAge <= 17 && realAge >= 7){
-            System.out.println("Тебе нужно ходить в школу");
+            System.out.println("Если возраст человека равен " + realAge + " тебе нужно ходить в школу");
         }
         if (realAge <= 24 && realAge >= 18){
-            System.out.println("Тебе нужно ходить в университет");
+            System.out.println("Если возраст человека равен " + realAge + " тебе нужно ходить в университет");
         }
         if (realAge > 24) {
-            // Блок выполнится. Результат выражения в условии if был false
-            System.out.println("Ты оборзел иди работать, трутень или начни учится в Skypro!");
+            System.out.println("Если возраст человека равен " + realAge + ", то работать, трутень или начни учится в Skypro!");
         }
 
         // Задача 5
@@ -54,13 +53,13 @@ public class Main {
         boolean adult = false;
 
         if (child < 5) {
-            System.out.println("Тебе рано на аттракцион");
+            System.out.println("Если возраст ребенка равен " + child + " рано на аттракцион");
         }
         if (child < 14 && realAge >= 5 && !adult){
-            System.out.println("Если взрослого рядом нет, то кататься нельзя");
+            System.out.println("Если возраст ребенка равен " + child +  " и если взрослого рядом нет, то кататься нельзя");
         }
         if (child >= 14 && !adult){
-            System.out.println("Ты можешь кататься без сопровождения взрослого");
+            System.out.println("Если возраст ребенка равен " + child + " он может кататься без сопровождения взрослого");
         }
 
 
@@ -93,9 +92,9 @@ public class Main {
         int truee = 0;
 
         if (one > two) {
-            System.out.println(truee = one);
+            truee = one;
         } else {
-            System.out.println(truee = two);
+            truee = two;
         }
         if (truee > three) {
             System.out.println(truee = three);
