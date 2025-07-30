@@ -11,7 +11,6 @@ public class Main {
             System.out.println("Возраст совершеннолетия еще не наступил, нужно немного подождать.");
         }
 
-
         // Задача 2
         byte realTemperature = 17;
 
