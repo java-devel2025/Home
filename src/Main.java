@@ -57,37 +57,53 @@ public class Main {
         }
 
         // Задача 5
-        byte monthNumber = 12;
+        byte monthNumber = 1;
 
         switch (monthNumber) {
             case 1:
                 System.out.println("Месяц " + monthNumber + " январь");
+                System.out.println(" это зима");
+                break;
             case 2:
                 System.out.println("Месяц " + monthNumber + " февраль");
+                System.out.println(" это зима");
+                break;
             case 3:
                 System.out.println("Месяц " + monthNumber + " март");
                 System.out.println(" это зима");
                 break;
             case 4:
                 System.out.println("Месяц " + monthNumber + " апрель");
+                System.out.println(" это лето");
+                break;
             case 5:
                 System.out.println("Месяц " + monthNumber + " май");
+                System.out.println(" это лето");
+                break;
             case 6:
                 System.out.println("Месяц " + monthNumber + " июнь");
                 System.out.println(" это лето");
                 break;
             case 7:
                 System.out.println("Месяц " + monthNumber + " июль");
+                System.out.println(" это осень");
+                break;
             case 8:
                 System.out.println("Месяц " + monthNumber + " август");
+                System.out.println(" это осень");
+                break;
             case 9:
                 System.out.println("Месяц " + monthNumber + " сентябрь");
                 System.out.println(" это осень");
                 break;
             case 10:
                 System.out.println("Месяц " + monthNumber + " октябрь");
+                System.out.println(" это зима");
+                break;
             case 11:
                 System.out.println("Месяц " + monthNumber + " ноябрь");
+                System.out.println(" это зима");
+                break;
             case 12:
                 System.out.println("Месяц " + monthNumber + " январь");
                 System.out.println(" это зима");
