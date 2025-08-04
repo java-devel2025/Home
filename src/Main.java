@@ -2,111 +2,65 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        byte clientOS = 0;
-
-        if (clientOS == 0) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        }
-
+//        for (int i = 1; i <= 10; i++) {
+//            System.out.println(i);
+//        }
 
         // Задача 2
-        int clientDeviceYear = 2014;
-
-        if (clientOS == 0) {
-            if (clientDeviceYear >= 2015) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }
-        }
-        if (clientOS == 1) {
-          if (clientDeviceYear >= 2015) {
-              System.out.println("Установите облегченную версию приложения для Android по ссылке");
-          }
-        }
+//        for (int i = 10; i >= 1; i--) {
+//            System.out.println(i);
+//        }
 
         // Задача 3
-        short year = 2021;
-
-        if (year <= 1584) {
-            System.out.println(year + " год не проверяется, так как високосные годы ввели после 1584 года.");
-        } else if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-            System.out.println(year + " год является високосным.");
-        } else {
-            System.out.println(year + " год не является високосным.");
-        }
+//        for (int i = 0; i <= 17 && i % 2 == 0 ; i = i + 2) {
+//            System.out.println(i);
+//        }
 
         // Задача 4
-        short deliveryDistance = 19;
-        byte days = 1;
-
-        if (deliveryDistance > 100) {
-            System.out.println("Доставка не осуществляется на расстояние более 100 км.");
-        }
-        if (deliveryDistance <= 20) {
-            System.out.println(" Потребуется дней: " + (days) + " срок доставки");
-        }
-        if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println(" Потребуется дней: " + (days + 1) + " срок доставки");
-        }
-        if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            System.out.println(" Потребуется дней: " + (days + 2) + " срок доставки");
-        }
+//        for (int i = 10; i >= -10; i--) {
+//            System.out.println(i);
+//        }
 
         // Задача 5
-        byte monthNumber = 13;
+//        for (int i = 1904; i <= 2096; i = i + 4) {
+//            System.out.println(i);
+//        }
 
-        switch (monthNumber) {
-            case 1:
-                System.out.println("Месяц " + monthNumber + " январь");
-                System.out.println(" это зима");
-                break;
-            case 2:
-                System.out.println("Месяц " + monthNumber + " февраль");
-                System.out.println(" это зима");
-                break;
-            case 3:
-                System.out.println("Месяц " + monthNumber + " март");
-                System.out.println(" это весна");
-                break;
-            case 4:
-                System.out.println("Месяц " + monthNumber + " апрель");
-                System.out.println(" это весна");
-                break;
-            case 5:
-                System.out.println("Месяц " + monthNumber + " май");
-                System.out.println(" это весна");
-                break;
-            case 6:
-                System.out.println("Месяц " + monthNumber + " июнь");
-                System.out.println(" это лето");
-                break;
-            case 7:
-                System.out.println("Месяц " + monthNumber + " июль");
-                System.out.println(" это лето");
-                break;
-            case 8:
-                System.out.println("Месяц " + monthNumber + " август");
-                System.out.println(" это лето");
-                break;
-            case 9:
-                System.out.println("Месяц " + monthNumber + " сентябрь");
-                System.out.println(" это осень");
-                break;
-            case 10:
-                System.out.println("Месяц " + monthNumber + " октябрь");
-                System.out.println(" это осень");
-                break;
-            case 11:
-                System.out.println("Месяц " + monthNumber + " ноябрь");
-                System.out.println(" это осень");
-                break;
-            case 12:
-                System.out.println("Месяц " + monthNumber + " январь");
-                System.out.println(" это зима");
-                break;
-            default:
-                break;
-        }
+        // Задача 6
+//        int i = 7;
+//        int end = i * 14;
+//
+//        for (; i <= end; i = i + 7) {
+//            System.out.println(i);
+//        }
+
+        // Задача 7
+//        int ii = 2;
+//        int endd = 512;
+//
+//        for (; ii <= endd + 1; ii = ii * 2) {
+//            System.out.println(ii);
+//        }
+
+        // Задача 8
+//        int month = 29000;
+//        int total = 0;
+//
+//        for (int i = 0; i < 12; i++) {
+//            total = total + month;
+//            System.out.println(total);
+//        }
+
+        // Задача 9
+//        int month = 29000;
+//        int bonuse = 0;
+//
+//        for (int i = 0; i <= 12; i++) {
+//            bonuse = bonuse + month/100;
+//            month = month + bonuse;
+//            System.out.println("Месяц " + i + ", сумма накоплений равна " + bonuse + " рублей");
+//        }
+
+        // Задача 10
     }
 }
