@@ -53,6 +53,7 @@ public class Main {
             System.out.println(total);
         }
 
+
         // Задача 9
         int monthh = 29000;
         int bonuse = 0;
