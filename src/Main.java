@@ -23,7 +23,9 @@ public class Main {
 
         // Задача 5
         for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println(i);
+            if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+                System.out.println(i + " год является високосным.");
+            }
         }
 
         // Задача 6
@@ -58,7 +60,7 @@ public class Main {
         for (int iiiii = 0; iiiii <= 12; iiiii++) {
             bonuse = bonuse + monthh/100;
             monthh = monthh + bonuse;
-            System.out.println("Месяц " + iiiii + ", сумма накоплений равна " + bonuse + " рублей");
+            System.out.println("Месяц " + iiiii + ", сумма накоплений равна " + monthh + " рублей");
         }
 
         // Задача 10
