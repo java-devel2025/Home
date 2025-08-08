@@ -3,22 +3,27 @@ public class Main {
 
         // Задача 1
         int mounth = 0;
+        int total = 0;
 
-        for (int total = 0; total < 2_459_000; mounth += 1) {
+        while ( total < 2_459_000) {
+            mounth++;
             total += 15_000;
-            System.out.println("Месяц " + mounth +", сумма накоплений равна" + total + "рублей");
+            System.out.println("Месяц " + mounth +", сумма накоплений равна " + total + " рублей");
         }
 
         // Задача 2
-        int start = 0;
+        int start0 = 0;
 
-        while (start < 10) {
-            start++;
-            System.out.print (" " +start);
+        while (start0 < 10) {
+            start0++;
+            System.out.print (" " +start0);
         }
+
         System.out.println();
-        for (start = 10; start > 0; start--) {
-            System.out.print (" " +start);
+
+
+        for (int start1 = 10; start1 > 0; start1--) {
+            System.out.print (" " +start1);
         }
 
         // Задача 3
@@ -35,28 +40,30 @@ public class Main {
         // Задача 4
         double start = 15_000;
         double proc = 0.07;
+//        int mounth = 0;
 
-        while (start < 2_000_000) {
+        while (start < 12_000_000) {
+            mounth++;
             start = start + (start * proc);
-            System.out.println(start);
+            System.out.println("Месяц " + mounth +", сумма накоплений равна" + start + " рублей");
         }
 
         // Задача 5
-        double start = 15_000;
-        double proc = 0.07;
-        double mounth = 1;
+//        double start = 15_000;
+//        double proc = 0.07;
+        double mounth1 = 1;
 
-        for (; start < 2_000_000; mounth++) {
+        for (; start < 2_000_000; mounth1++) {
             start = start + (start * proc);
 
-            if (mounth % 6 == 0) {
-                System.out.println("Месяц " + mounth + ", сумма накоплений равна " + start + " рублей");
+            if (mounth1 % 6 == 0) {
+                System.out.println("Месяц " + mounth1 + ", сумма накоплений равна " + start + " рублей");
             }
         }
 
         // Задача 6
-        double start = 15_000;
-        double proc = 0.07;
+//        double start = 15_000;
+//        double proc = 0.07;
         int months = 9 * 12;    // 9 лет в месяцах
 
         for (int month = 1; month <= months; month++) {
@@ -67,7 +74,7 @@ public class Main {
             }
         }
 
-        // Задача 7
+//        // Задача 7
         int friday = 3;
         int month = 31;
 
