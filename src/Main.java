@@ -2,72 +2,89 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
+        int mounth = 0;
+
+        for (int total = 0; total < 2_459_000; mounth += 1) {
+            total += 15_000;
+            System.out.println("Месяц " + mounth +", сумма накоплений равна" + total + "рублей");
         }
 
         // Задача 2
-        for (int i = 10; i >= 1; i--) {
-            System.out.println(i);
+        int start = 0;
+
+        while (start < 10) {
+            start++;
+            System.out.print (" " +start);
+        }
+        System.out.println();
+        for (start = 10; start > 0; start--) {
+            System.out.print (" " +start);
         }
 
         // Задача 3
-        for (int i = 0; i <= 17 && i % 2 == 0 ; i = i + 2) {
-            System.out.println(i);
+        var Y = 12_000_000;
+        var mortality = 0.0008;
+        var birthRate = 0.0017;
+
+        for (int i = 1; i <= 10; i++) {
+            var populationGrowthYaer = Y * (birthRate - mortality);
+            Y += populationGrowthYaer;
+            System.out.println("Год " + i +", численность населения составляет " + Y);
         }
 
         // Задача 4
-        for (int i = 10; i >= -10; i--) {
-            System.out.println(i);
+        double start = 15_000;
+        double proc = 0.07;
+
+        while (start < 2_000_000) {
+            start = start + (start * proc);
+            System.out.println(start);
         }
 
         // Задача 5
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
-                System.out.println(i + " год является високосным.");
+        double start = 15_000;
+        double proc = 0.07;
+        double mounth = 1;
+
+        for (; start < 2_000_000; mounth++) {
+            start = start + (start * proc);
+
+            if (mounth % 6 == 0) {
+                System.out.println("Месяц " + mounth + ", сумма накоплений равна " + start + " рублей");
             }
         }
 
         // Задача 6
-        int i = 7;
-        int end = i * 14;
+        double start = 15_000;
+        double proc = 0.07;
+        int months = 9 * 12;    // 9 лет в месяцах
 
-        for (; i <= end; i = i + 7) {
-            System.out.println(i);
+        for (int month = 1; month <= months; month++) {
+            start += start * proc;
+
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + start + " рублей");
+            }
         }
 
         // Задача 7
-        int ii = 2;
-        int endd = 512;
+        int friday = 3;
+        int month = 31;
 
-        for (; ii <= endd + 1; ii = ii * 2) {
-            System.out.println(ii);
+        for (int day = friday; day <= month; day += 7) {
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
         }
 
         // Задача 8
-        int month = 29000;
-        int total = 0;
+        int realYear = 2025;
+        int year200 = realYear - 200;
+        int year100 = realYear + 100;
+        int cometPeriod = 79;
 
-        for (int iii = 0; iii < 12; iii++) {
-            total = total + month;
-            System.out.println(total);
-        }
-
-        // Задача 9
-        int monthh = 29000;
-        int bonuse = 0;
-
-        for (int iiiii = 0; iiiii <= 12; iiiii++) {
-            bonuse = bonuse + monthh/100;
-            monthh = monthh + bonuse;
-            System.out.println("Месяц " + iiiii + ", сумма накоплений равна " + monthh + " рублей");
-        }
-
-        // Задача 10
-        int p = 2;
-        for (int u = 1; u <= 10; u = u + 1) {
-            p = u * 2;
-            System.out.println("(2*"+u+"="+p+")");
+        for (int year = 0; year <= year100; year += cometPeriod) {
+            if (year >= year200 && year <= year100) {
+                System.out.println(year);
+            }
         }
     }
 }
