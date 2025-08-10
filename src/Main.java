@@ -1,78 +1,53 @@
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        int [] ints = {1, 2, 3};
-        double [] doubles = {1.57, 7.654, 9.986};
-        boolean [] booleans = new boolean[2];
+        int[] weekDamage = {5000, 4500, 7000, 2000, 1000};
+        int sum = 0;
+        for (int i : weekDamage) {
+            sum += i;
+        }
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
-        // Задача 2
-        for (int i = 0; i < ints.length; i++) {
-            if (i == ints.length - 1) {
-                System.out.print(ints[i] + "");
-                break;
+        // Задача
+        int min = 0;
+        int max = 0;
+
+        for (int i = 0; i < weekDamage.length - 1; i++) {
+            if (weekDamage[i + 1] < weekDamage[i]) {
+                min = weekDamage[i];
             }
-            System.out.print(ints[i] + ", ");
-        }
-        System.out.println();
-        for (int i = 0; i < doubles.length; i++) {
-            if (i == doubles.length - 1) {
-                System.out.print(doubles[i] + "");
-                break;
+            if (weekDamage[i + 1] > weekDamage[i]) {
+                max = weekDamage[i];
             }
-            System.out.print(doubles[i] + ", ");
         }
-        System.out.println();
-        for (int i = 0; i < booleans.length; i++) {
-            if (i == booleans.length - 1) {
-                System.out.print(booleans[i] + "");
-                break;
-            }
-            System.out.print(booleans[i] + ", ");
+        System.out.println("Минимальная сумма трат за неделю составила " + min + " рублей. Максимальная сумма трат " +
+                " за неделю составила " + max + " рублей");
+
+        int middleDamage = 0;
+
+        for (int i = 0; i < weekDamage.length; i++) {
+            sum += weekDamage[i];
+            middleDamage = sum / weekDamage.length;
         }
-        System.out.println();
+        System.out.println("Средняя сумма трат за месяц составила " + middleDamage + " рублей");
+
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for (int i = 0; i < reverseFullName.length / 2; i++) {
+            char temp = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
+            reverseFullName[reverseFullName.length - 1 - i] = temp;
+        }
+        System.out.print(reverseFullName);
 
         // Задача 3
-        for (int i = ints.length -1; i != -1; i--) {
-            if (i == 0) {
-                System.out.print(ints[i] + "");
-                break;
-            }
-            System.out.print(ints[i] + ", ");
-        }
-        System.out.println();
-        for (int i = doubles.length -1; i != -1; i--) {
-            if (i == 0) {
-                System.out.print(doubles[i] + "");
-                break;
-            }
-            System.out.print(doubles[i] + ", ");
-        }
-        System.out.println();
-        for (int i = booleans.length - 1; i != -1; i--) {
-            if (i == 0) {
-                System.out.print(booleans[i] + "");
-                break;
-            }
-            System.out.print(booleans[i] + ", ");
-        }
-        System.out.println();
 
         // Задача 4
-        for (int i = 0; i < ints.length; i++) {
 
-            if (ints[i] % 2 != 0) {
-                ints[i] += 1;
-            }
-
-            if (i == ints.length - 1) {
-                System.out.print(ints[i] + "");
-                break;
-            }
-
-            System.out.print(ints[i] + ", ");
-        }
         // Задача 5
 
         // Задача 6
