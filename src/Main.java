@@ -4,54 +4,24 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        int[] weekDamage = {5000, 4500, 7000, 2000, 1000};
-        int sum = 0;
-//        for (int i : weekDamage) {
-//            sum += i;
-//        }
-//        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
 
+        System.out.printf("Ф. И. О. сотрудника — " + fullName);
 
+        System.out.println("");
         // Задача 2
-        int min = 10000;
-        int max = 0;
+        System.out.print("Данные Ф. И. О. сотрудника для заполнения отчета — " + fullName.toUpperCase());
 
-        for (int i = 0; i < weekDamage.length; i++) {
-            if (min > weekDamage[i]) {
-                min = weekDamage[i];
-            }
-            if (max < weekDamage[i]) {
-                max = weekDamage[i];
-            }
-        }
-        System.out.println("Минимальная сумма трат за неделю составила " + min + " рублей. Максимальная сумма трат" +
-                " за неделю составила " + max + " рублей");
-
+        System.out.println("");
 
         // Задача 3
-        int middleDamage = 0;
+        String fullName1 = "Иванов Семён Семёнович";
+        String fullName2 = fullName1.replace("ё", "е");
 
-        for (int i = 0; i < weekDamage.length; i++) {
-            sum += weekDamage[i];
-        }
-        middleDamage = sum / weekDamage.length;  // понял спасибо!
-
-        System.out.println("Средняя сумма трат за месяц составила " + middleDamage + " рублей");
-
-
-        // Задача 4
-//        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-//
-//        for (int i = 0; i < reverseFullName.length / 2; i++) {
-//            char temp = reverseFullName[i];
-//            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
-//            reverseFullName[reverseFullName.length - 1 - i] = temp;
-//        }
-//        System.out.print(reverseFullName);
-
-        // Задача 5
-
-        // Задача 6
+        System.out.print("Данные Ф. И. О. сотрудника — " + fullName2);
 
         // Задача 7
 
