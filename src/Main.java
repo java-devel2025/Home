@@ -1,31 +1,72 @@
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
 
         // Задача 1
-        String firstName = "Ivan";
-        String middleName = "Ivanovich";
-        String lastName = "Ivanov";
-        String fullName = lastName + " " + firstName + " " + middleName;
 
-        System.out.printf("Ф. И. О. сотрудника — " + fullName);
+    public static void checkYear(int year) {
+        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+            System.out.println(year + " год — високосный год");
+        } else {
+            System.out.println(year + " год — невисокосный год");
+        }
+    }
 
-        System.out.println("");
+    public static void checkPhone(int system, int year) {
+        if (system == 1) {
+            if (year < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            }
+            else {
+                System.out.println("Установите обычную версию приложения для iOS по ссылке");
+            }
+        }
+
+        if (system == 0) {
+            if (year < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            }
+            else {
+                System.out.println("Установите обычную версию приложения для Android по ссылке");
+            }
+        }
+    }
+
+    public static void getCard(int km) {
+        int day = 1;
+        if (km <= 20) {
+            System.out.println("Потребуется дней: " + day);
+        }
+        if ( km > 20 && km <= 60) {
+            day++;
+            System.out.println("Потребуется дней: " + day);
+        }
+        if (km > 60 && km <= 100) {
+            day += 2;
+            System.out.println("Потребуется дней: " + day);
+        }
+        if (km > 100) {
+            System.out.println("Доставки нет!");
+        }
+    }
+
+    public static void main(String[] args) {
+        checkYear(2021);
+        checkYear(2024);
+        checkPhone(1, 2015);
+        checkPhone(0, 2014);
+        getCard(95);
+    }
+
         // Задача 2
-        System.out.print("Данные Ф. И. О. сотрудника для заполнения отчета — " + fullName.toUpperCase());
 
-        System.out.println("");
 
         // Задача 3
-        String fullName1 = "Иванов Семён Семёнович";
-        String fullName2 = fullName1.replace("ё", "е");
 
-        System.out.print("Данные Ф. И. О. сотрудника — " + fullName2);
 
         // Задача 7
 
         // Задача 8
-    }
+
 }
 
