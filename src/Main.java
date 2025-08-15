@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Arrays;
 
 public class Main {
@@ -13,8 +14,10 @@ public class Main {
     }
 
     public static void checkPhone(int system, int year) {
+        int currentYear = LocalDate.now().getYear();
+
         if (system == 1) {
-            if (year < 2015) {
+            if (year < currentYear) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             }
             else {
@@ -23,7 +26,7 @@ public class Main {
         }
 
         if (system == 0) {
-            if (year < 2015) {
+            if (year < currentYear) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
             }
             else {
@@ -32,7 +35,7 @@ public class Main {
         }
     }
 
-    public static void getCard(int km) {
+    public static void deliverCard(int km) {
         int day = 1;
         if (km <= 20) {
             System.out.println("Потребуется дней: " + day);
@@ -54,8 +57,8 @@ public class Main {
         checkYear(2021);
         checkYear(2024);
         checkPhone(1, 2015);
-        checkPhone(0, 2014);
-        getCard(95);
+        checkPhone(0, 2016);
+        deliverCard(95);
     }
 
         // Задача 2
