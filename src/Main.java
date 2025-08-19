@@ -1,20 +1,20 @@
-import java.time.LocalDate;
-
 public class Main {
     // Задача 1
 
-
     public static void main(String[] args) {
         Author author = new Author("Ivanov", "Ivan");
-        Author author1 = new Author("Petrov", "Ivan");
+        Book book = new Book(author,1933, "Blabla");  // добавляем Author и Author1 как готовые значения
 
-        Book book = new Book(author,1933, "Blabla");
-        Book book1 = new Book(author1,2025, "Blabla2");
+        System.out.println("Вывод функции Author.toString() " + author);
+        System.out.println("Вывод функции Book.toString() " + book);
 
-        book.setYear(2024);
 
-        System.out.println("Автор - " + author.getFullName() + " Год издания: " + book.getYear() + " Название книги - " + book.getNameBook());
-        System.out.println("Автор - " + author1.getFullName() + " Год издания: " + book1.getYear() + " Название книги - " + book1.getNameBook());
+        Author g = new Author("Ivanov", "Ivan");
+        System.out.println("Сравнение имени из класса Author " + author.equals(g));
+
+        // я не понимаю как сравнить данные из класса Book
+//        Book book1 = new Book(author,1933, "Blabla");
+//        System.out.println("Сравнение имени из класса Book " + book.equals(book1));
     }
 
 
