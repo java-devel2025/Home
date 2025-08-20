@@ -1,73 +1,27 @@
 public class Main {
     public static void main(String[] args) {
+        Author author = new Author("Ivanov", "Ivan");
+        Book book = new Book(author, 1933, "Blabla");
 
-        // Задача 1
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
-        }
+        System.out.println("Вывод функции Author.toString(): " + author);
+        System.out.println("Вывод функции Book.toString(): " + book);
 
-        // Задача 2
-        for (int i = 10; i >= 1; i--) {
-            System.out.println(i);
-        }
+        Author g = new Author("Ivanov", "Ivan");
+        System.out.println("Сравнение авторов: " + author.equals(g));
 
-        // Задача 3
-        for (int i = 0; i <= 17 && i % 2 == 0 ; i = i + 2) {
-            System.out.println(i);
-        }
-
-        // Задача 4
-        for (int i = 10; i >= -10; i--) {
-            System.out.println(i);
-        }
-
-        // Задача 5
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
-                System.out.println(i + " год является високосным.");
-            }
-        }
-
-        // Задача 6
-        int i = 7;
-        int end = i * 14;
-
-        for (; i <= end; i = i + 7) {
-            System.out.println(i);
-        }
-
-        // Задача 7
-        int ii = 2;
-        int endd = 512;
-
-        for (; ii <= endd + 1; ii = ii * 2) {
-            System.out.println(ii);
-        }
-
-        // Задача 8
-        int month = 29000;
-        int total = 0;
-
-        for (int iii = 0; iii < 12; iii++) {
-            total = total + month;
-            System.out.println(total);
-        }
-
-        // Задача 9
-        int monthh = 29000;
-        int bonuse = 0;
-
-        for (int iiiii = 0; iiiii <= 12; iiiii++) {
-            bonuse = bonuse + monthh/100;
-            monthh = monthh + bonuse;
-            System.out.println("Месяц " + iiiii + ", сумма накоплений равна " + monthh + " рублей");
-        }
-
-        // Задача 10
-        int p = 2;
-        for (int u = 1; u <= 10; u = u + 1) {
-            p = u * 2;
-            System.out.println("(2*"+u+"="+p+")");
-        }
+        Book book1 = new Book(author, 1933, "Blabla");
+        System.out.println("Сравнение книг: " + book.equals(book1));
     }
 }
+
+
+        // Задача 2
+
+    // Задача 3
+
+
+        // Задача 7
+
+        // Задача 8
+
+
