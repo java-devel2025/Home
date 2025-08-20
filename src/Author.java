@@ -1,7 +1,8 @@
+import java.util.Objects;
+
 public class Author {
     private String firstName;
     private String lastName;
-    private String fullName;
 
     public Author (String firstName, String lastName) {
         this.firstName = firstName;
@@ -9,28 +10,29 @@ public class Author {
     }
 
     public String getFullName () {
-        fullName = firstName + " " + lastName;
-        return fullName;
+        return firstName + " " + lastName;
     }
 
     public String getLastName () {
         return lastName;
     }
 
+    @Override
     public String toString() {
         return getFullName();
     }
 
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Author c2 = (Author) other;
-        return toString().equals(c2.toString());
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Author)) return false;
+        Author author = (Author) o;
+        return Objects.equals(firstName, author.firstName) &&
+                Objects.equals(lastName, author.lastName);
     }
 
+    @Override
     public int hashCode() {
-        return java.util.Objects.hash(toString());
+        return Objects.hash(firstName, lastName);
     }
-
 }
