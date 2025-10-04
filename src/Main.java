@@ -2,6 +2,24 @@ public class Main {
     private static Employee[] employees = new Employee[10];
 
     public static void main(String[] args) {
+        EmployeeBook book = new EmployeeBook();
+
+        System.out.println("\nСредняя зарплата: " + book.getAverageSalary());
+
+        System.out.println("\n--- Налоги (PROPORTIONAL) ---");
+        book.printTaxes("PROPORTIONAL");
+
+        System.out.println("\n--- Индексация отдела 2 на 10% ---");
+        book.indexSalaryByDepartment(2, 10);
+
+        System.out.println("\n--- Первый сотрудник отдела 3 с зп > 200 ---");
+        book.printFirstByDeptAndSalary(3, 200);
+
+        System.out.println("\n--- Первые 3 сотрудника с зп < 400 ---");
+        book.printFirstEmployeesBelowWage(400, 3);
+
+        System.out.println("\n--- Поиск по id=3 ---");
+        System.out.println(book.getById(3));
 
         employees[0] = new Employee("Иванов Иван Иванович", 1, 50_000);
         employees[1] = new Employee("Петров Петр Петрович", 2, 60_000);
@@ -216,8 +234,6 @@ public class Main {
 
 
     // Задача 3
-
-
 
 
 }

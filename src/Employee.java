@@ -18,6 +18,18 @@ public class Employee {
         this.salary = salary;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getFio() {
+        return name;
+    }
+
+    public void printShortInfo() {
+        System.out.println("ID: " + id + ", ФИО: " + name + ", ЗП: " + salary);
+    }
+
     public String get_name() {
         return this.name;
     }
